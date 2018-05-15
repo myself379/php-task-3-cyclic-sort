@@ -10,17 +10,23 @@ Simply pull this repo and run
 composer install
 ```
 
+![composer_install](https://github.com/myself379/php-task-3-cyclic-sort/blob/master/images/composer_install.png)
+
 then run
 
 ```
 phpunit
 ```
 
+![phpunit](https://github.com/myself379/php-task-3-cyclic-sort/blob/master/images/phpunit.png)
+
 or if there is no phpunit install globally, run through the vendor directory
 
 ```
 ./vendor/phpunit/phpunit/phpunit
 ```
+
+![vendor_phpunit](https://github.com/myself379/php-task-3-cyclic-sort/blob/master/images/vendor_phpunit.png)
 
 # Cyclic Sort Katas
 
@@ -37,21 +43,30 @@ function cyclicSort($input, $ordering) { }
 Given an array with these items "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"; and the ordering of 7.
 
 Counting from "A" and the 7th character is "G".
+
 So the first output character is "G".
+
 Remove "G" and remains "A", "B", "C", "D", "E", "F", "H", "I", "J".
 
 Then starting from "H", count 7 in cyclic fashion (and roll over, starts from beginning), and reach "D".
+
 So the second output character is "D".
+
 Remove "D" and remains "A", "B", "C", "E", "F", "H", "I", "J".
 
 Starting from "E" and count 7 in cyclic fashion (and roll over, starts from beginning) and reach "B".
+
 So the second output character is "B".
+
 Remove "B" and remains "A", "C", "E", "F", "H", "I", "J".
 
 Starting from "C" and count 7 and continue the process until nothing remains.
 
 Finally, it should produce the output array of this order.
-    "G", "D", "B", "A", "C", "F", "J", "E", "H", "I"
+
+```
+"G", "D", "B", "A", "C", "F", "J", "E", "H", "I"
+```
 
 ```
 $input = "ABCDEFGHIJ";
