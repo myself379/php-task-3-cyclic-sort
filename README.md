@@ -1,6 +1,4 @@
-# php-task-3-cyclic-sort
-
-Cyclic Sort Katas
+# Cyclic Sort Katas
 
 # Installation guide
 
@@ -28,7 +26,7 @@ or if there is no phpunit install globally, run through the vendor directory
 
 ![vendor_phpunit](https://github.com/myself379/php-task-3-cyclic-sort/blob/master/images/vendor_phpunit.png)
 
-# Cyclic Sort Katas
+# Problem Statement
 
 ```
 /**
@@ -74,7 +72,7 @@ $output = cyclicSort($input, 7);
 echo $output.PHP_EOL; // GDBACFJEHI
 ```
 
-# Task
+# Tasks
 
 1. What is the output of "0123456789ABCDEF", if the order is "11"?
 
